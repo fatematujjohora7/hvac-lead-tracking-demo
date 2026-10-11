@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio demo website for an HVAC business. Demonstrates lead tracking with GA4 and Google Tag Manager.">
+  <title>Lone Star Comfort | HVAC Portfolio Demo</title>
+  <!-- PORTFOLIO DEMO ONLY: Replace GTM-REPLACE_ME with your own GTM container ID after creating it. -->
+  <!-- Google Tag Manager -->
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    window.dataLayer.push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      var f=d.getElementsByTagName(s)[0], j=d.createElement(s), dl=l!=='dataLayer'?'&l='+l:'';
+      j.async=true; j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-REPLACE_ME');
+  </script>
+  <!-- End Google Tag Manager -->
+  <style>
+    :root{--navy:#102b45;--blue:#1769aa;--sky:#eaf5ff;--orange:#f18a35;--ink:#15283a;--muted:#5c6e7c;--line:#dce5eb;--white:#fff;--pale:#f6f9fb;--green:#247b61}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55;background:white}a{color:inherit}button,input,select,textarea{font:inherit}.demo-banner{background:#fff3d9;color:#684817;text-align:center;padding:9px 16px;font-size:12px;font-weight:700;letter-spacing:.02em}.container{width:min(1120px,92%);margin:auto}.topbar{background:var(--navy);color:white;font-size:13px}.topbar-inner{display:flex;justify-content:space-between;gap:16px;padding:9px 0;flex-wrap:wrap}.topbar a{text-decoration:none}.nav{border-bottom:1px solid var(--line);background:white}.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:800;color:var(--navy);font-size:19px;line-height:1.1}.brand small{display:block;font-weight:500;font-size:10px;letter-spacing:.13em;color:var(--muted);margin-top:5px}.logo{width:42px;height:42px;border-radius:12px;background:var(--blue);display:grid;place-items:center;color:white;font-size:23px}.navlinks{display:flex;align-items:center;gap:25px;font-size:14px}.navlinks a{text-decoration:none;color:#33495c}.navlinks a:hover{color:var(--blue)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 18px;border-radius:8px;background:var(--orange);color:#172637;text-decoration:none;font-size:14px;font-weight:800;border:0;cursor:pointer}.btn:hover{filter:brightness(.97)}.btn.blue{background:var(--blue);color:white}.btn.outline{background:transparent;border:1px solid #b9cad7;color:var(--navy)}.hero{background:linear-gradient(115deg,#edf7ff 0%,#f6fbff 58%,#fff 100%);padding:70px 0 62px;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:46px}.eyebrow{color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.15em;text-transform:uppercase}.hero h1{font-size:clamp(36px,4.7vw,58px);line-height:1.07;letter-spacing:-.04em;color:var(--navy);margin:16px 0}.hero p{font-size:17px;color:#4d6273;max-width:570px}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}.trustrow{display:flex;gap:19px;flex-wrap:wrap;margin-top:25px;font-size:12px;color:#4f6576}.trustrow span:before{content:'✓';color:var(--green);font-weight:900;margin-right:7px}.hero-art{background:linear-gradient(145deg,#cde9fb,#e9f6fd);border-radius:28px;min-height:330px;position:relative;display:grid;place-items:center;overflow:hidden}.sun{width:210px;height:210px;background:#fff;border-radius:50%;position:absolute;right:30px;top:27px;opacity:.7}.house{position:absolute;bottom:0;width:88%;height:56%;background:#fff;border-radius:7px 7px 0 0;box-shadow:0 -8px 0 rgba(23,105,170,.07)}.roof{position:absolute;bottom:53%;width:94%;height:90px;background:#1769aa;clip-path:polygon(50% 0,100% 100%,0 100%);z-index:2}.window{position:absolute;background:#c6e4f8;border:5px solid #eff8ff;width:60px;height:75px;top:28px;left:16%}.door{position:absolute;width:58px;height:112px;background:#f2a15d;right:16%;bottom:0;border-radius:6px 6px 0 0}.ac-unit{z-index:3;position:absolute;bottom:20px;left:22px;background:#f4f7f9;border:2px solid #c7d5de;width:106px;height:81px;border-radius:10px;box-shadow:0 9px 20px #567b9722;display:grid;place-items:center}.fan{border:6px solid #a9bdcc;border-radius:50%;width:48px;height:48px;display:grid;place-items:center;color:#7e9aad;font-size:24px}.art-label{position:absolute;z-index:4;top:22px;left:20px;background:white;padding:10px 14px;border-radius:10px;box-shadow:0 8px 25px #173b5620;font-size:12px;font-weight:800;color:var(--navy)}section{padding:70px 0}.section-head{text-align:center;max-width:650px;margin:0 auto 36px}.section-head h2{font-size:clamp(27px,3vw,38px);line-height:1.15;color:var(--navy);margin:10px 0}.section-head p{color:var(--muted);margin:0}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.service-card{padding:25px;border:1px solid var(--line);border-radius:15px;background:white;box-shadow:0 6px 20px #112b4507}.service-icon{width:48px;height:48px;border-radius:12px;background:var(--sky);display:grid;place-items:center;font-size:24px}.service-card h3{margin:17px 0 8px;color:var(--navy);font-size:20px}.service-card p{color:var(--muted);font-size:14px;min-height:68px}.text-link{display:inline-block;color:var(--blue);font-weight:800;font-size:13px;text-decoration:none}.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}.why{background:var(--pale)}.checklist{list-style:none;padding:0;margin:23px 0}.checklist li{margin:12px 0;color:#40586b}.checklist li:before{content:'✓';display:inline-grid;place-items:center;width:23px;height:23px;background:#e0f3eb;color:var(--green);border-radius:50%;font-weight:800;margin-right:10px}.statpanel{border-radius:20px;background:var(--navy);color:white;padding:30px}.statpanel h3{font-size:25px;margin-top:0}.statpanel p{color:#cfdeea}.metric{border-top:1px solid #35546e;padding:15px 0;display:flex;justify-content:space-between;gap:16px;font-size:14px}.metric strong{color:#8ed1ff}.contact{background:#f7fafc}.contact-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:45px;align-items:start}.contact h2{font-size:36px;line-height:1.15;color:var(--navy);margin:10px 0}.contact-copy p{color:var(--muted)}.contact-info{margin-top:25px;display:grid;gap:13px}.contact-info a{text-decoration:none;font-weight:700;color:var(--navy)}.form-card{background:white;border:1px solid var(--line);box-shadow:0 12px 35px #102b4510;border-radius:17px;padding:28px}.form-card h3{margin:0 0 6px;color:var(--navy);font-size:23px}.form-card>p{color:var(--muted);font-size:13px;margin:0 0 22px}.fields{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:grid;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:12px;font-weight:800;color:#344e62}.field input,.field select,.field textarea{width:100%;padding:12px;border:1px solid #cad7e0;border-radius:7px;background:white;color:var(--ink)}.field textarea{resize:vertical;min-height:88px}.form-note{font-size:11px;color:#6a7e8d;margin:13px 0}.success{display:none;border-radius:9px;background:#e5f5ed;color:#155a42;padding:14px;margin-top:15px;font-size:14px}.footer{background:#0b2135;color:#cfdae3;padding:27px 0}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap;font-size:12px}.footer a{color:white}.footer strong{color:white}.footer-demo{color:#ffcf91}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+    @media(max-width:800px){.hero-grid,.split,.contact-grid{grid-template-columns:1fr}.hero{padding:48px 0}.hero-art{min-height:280px}.cards{grid-template-columns:1fr}.navlinks{display:none}.nav-inner{height:66px}.contact-grid{gap:28px}.service-card p{min-height:0}}
+    @media(max-width:480px){.fields{grid-template-columns:1fr}.field.full{grid-column:auto}.hero h1{font-size:37px}.form-card{padding:20px}.topbar-inner{justify-content:center;text-align:center}.hero-art{min-height:235px}}
+  </style>
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-REPLACE_ME" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+  <div class="demo-banner">PORTFOLIO DEMO WEBSITE — FICTIONAL BUSINESS — NOT A REAL HVAC PROVIDER</div>
+  <div class="topbar"><div class="container topbar-inner"><span>Residential Heating &amp; Cooling • Dallas–Fort Worth demo</span><span>Demo phone: <a class="phone-link" href="tel:+12145550184" data-track="phone">(214) 555-0184</a></span></div></div>
+  <header class="nav"><div class="container nav-inner">
+    <a class="brand" href="#home" aria-label="Lone Star Comfort home"><span class="logo">✦</span><span>LONE STAR COMFORT<small>HEATING &amp; AIR • DEMO</small></span></a>
+    <nav class="navlinks" aria-label="Main navigation"><a href="#services">Services</a><a href="#about">Why choose us</a><a href="#contact">Contact</a></nav>
+    <a class="btn blue phone-link" href="tel:+12145550184" data-track="phone">☎ Call the demo line</a>
+  </div></header>
+  <main id="home">
+    <section class="hero"><div class="container hero-grid"><div>
+      <div class="eyebrow">Comfort starts at home</div>
+      <h1>Reliable comfort for every season.</h1>
+      <p>Explore this sample HVAC website built to demonstrate lead-generation tracking with Google Analytics 4 and Google Tag Manager.</p>
+      <div class="hero-actions"><a class="btn" href="#contact" data-track="quote_cta">Request a service quote →</a><a class="btn outline phone-link" href="tel:+12145550184" data-track="phone">☎ Call (214) 555-0184</a></div>
+      <div class="trustrow"><span>Repair &amp; maintenance</span><span>Heating &amp; cooling</span><span>Demo form tracking</span></div>
+    </div><div class="hero-art" aria-label="Illustration of a home with an air conditioner"><div class="sun"></div><div class="art-label">YOUR COMFORT, OUR PRIORITY</div><div class="roof"></div><div class="house"><div class="window"></div><div class="door"></div></div><div class="ac-unit"><div class="fan">✣</div></div></div></div></section>
+    <section id="services"><div class="container"><div class="section-head"><div class="eyebrow">What we do</div><h2>Heating and cooling services</h2><p>These sample service cards provide realistic paths for a local-service lead-tracking demo.</p></div>
+      <div class="cards">
+        <article class="service-card"><div class="service-icon">❄</div><h3>AC Repair</h3><p>Demonstration service page content for homeowners who need help with an air conditioner that is not cooling properly.</p><a class="text-link service-link" href="#contact" data-service="AC Repair">Request AC repair →</a></article>
+        <article class="service-card"><div class="service-icon">⌂</div><h3>System Installation</h3><p>Sample content for customers comparing a new cooling system or replacing aging equipment in their home.</p><a class="text-link service-link" href="#contact" data-service="System Installation">Ask about installation →</a></article>
+        <article class="service-card"><div class="service-icon">⚙</div><h3>Preventive Maintenance</h3><p>Sample content for seasonal tune-ups and routine checks designed to keep home comfort equipment working well.</p><a class="text-link service-link" href="#contact" data-service="Preventive Maintenance">Schedule maintenance →</a></article>
+      </div>
+    </div></section>
+    <section class="why" id="about"><div class="container split"><div><div class="eyebrow">A thoughtful service experience</div><h2 style="font-size:clamp(29px,3.4vw,42px);line-height:1.12;color:var(--navy)">Clear information. Easy ways to get in touch.</h2><p style="color:var(--muted)">A real HVAC site should make it simple for visitors to understand services and contact the business. This demo illustrates those conversion paths; the business, service claims, and contact details are fictional.</p><ul class="checklist"><li>Service-specific calls to action</li><li>Clickable phone links</li><li>Quote-request form with validation</li><li>Tracking events available through the data layer</li></ul><a class="btn blue" href="#contact" data-track="about_cta">Request a demo quote →</a></div>
+      <div class="statpanel"><h3>Analytics-ready demo</h3><p>Use this test site to practice tag configuration, debugging, and clear documentation.</p><div class="metric"><span>Primary conversion</span><strong>generate_lead</strong></div><div class="metric"><span>Phone interaction</span><strong>click_to_call</strong></div><div class="metric"><span>Form interaction</span><strong>form_start</strong></div><div class="metric"><span>Event payloads</span><strong>dataLayer</strong></div><p style="font-size:11px;margin-bottom:0">These are planned demo events. They are not proof that GA4 has been configured yet.</p></div>
+    </div></section>
+    <section class="contact" id="contact"><div class="container contact-grid"><div class="contact-copy"><div class="eyebrow">Contact the demo team</div><h2>Tell us what your home needs.</h2><p>This form is for testing the demo website only. It does not send a message to a real HVAC company. Use fictional test information only.</p><div class="contact-info"><a class="phone-link" href="tel:+12145550184" data-track="phone">☎ (214) 555-0184 — demo number</a><span>⌖ Dallas–Fort Worth, Texas — sample service area</span><span>◷ Appointment requests are simulated</span></div></div>
+      <form class="form-card" id="quote-form"><h3>Request a service quote</h3><p>Complete this sample form to test the lead event.</p><div class="fields">
+        <div class="field"><label for="name">Name (test only)</label><input id="name" name="name" autocomplete="off" required placeholder="Demo Customer"></div>
+        <div class="field"><label for="email">Email (test only)</label><input id="email" name="email" type="email" autocomplete="off" required placeholder="demo@example.com"></div>
+        <div class="field"><label for="service">Service needed</label><select id="service" name="service" required><option value="">Select a service</option><option>AC Repair</option><option>System Installation</option><option>Preventive Maintenance</option><option>Heating Service</option></select></div>
+        <div class="field"><label for="timeframe">Preferred timeframe</label><select id="timeframe" name="timeframe" required><option value="">Select timeframe</option><option>As soon as possible</option><option>This week</option><option>Planning ahead</option></select></div>
+        <div class="field full"><label for="details">Additional details (optional)</label><textarea id="details" name="details" placeholder="Do not enter real or sensitive information."></textarea></div>
+        <div class="field full"><button class="btn" type="submit">Submit demo request →</button></div>
+      </div><div class="form-note">Privacy-safe demo: entered fields are not sent to a server and are not included in dataLayer event parameters.</div><div class="success" id="success-message" role="status" aria-live="polite">Demo request submitted successfully. A simulated <strong>generate_lead</strong> event has been sent to the data layer if tracking is configured.</div></form>
+    </div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><span><strong>Lone Star Comfort</strong> · HVAC analytics demo</span><span class="footer-demo">Fictional portfolio project — no real services are offered.</span><a href="#home">Back to top ↑</a></div></footer>
+  <script>
+    // Portfolio-demo interactions. Never push names, email addresses, phone numbers, or form text to dataLayer.
+    (function(){
+      window.dataLayer = window.dataLayer || [];
+      var form = document.getElementById('quote-form');
+      var started = false;
+      var success = document.getElementById('success-message');
+      var serviceSelect = document.getElementById('service');
+
+      form.addEventListener('focusin', function(){
+        if (!started) {
+          started = true;
+          window.dataLayer.push({event:'form_start', form_name:'hvac_quote_form', form_type:'quote_request'});
+        }
+      });
+      document.querySelectorAll('.phone-link').forEach(function(link){
+        link.addEventListener('click', function(){
+          window.dataLayer.push({event:'click_to_call', link_url:link.getAttribute('href'), link_text:'demo_phone'});
+        });
+      });
+      document.querySelectorAll('.service-link').forEach(function(link){
+        link.addEventListener('click', function(){
+          window.dataLayer.push({event:'select_service', service_type:link.getAttribute('data-service') || 'unspecified'});
+        });
+      });
+      document.querySelectorAll('[data-track="quote_cta"], [data-track="about_cta"]').forEach(function(link){
+        link.addEventListener('click', function(){
+          window.dataLayer.push({event:'select_lead_cta', cta_location:link.getAttribute('data-track')});
+        });
+      });
+      form.addEventListener('submit', function(event){
+        event.preventDefault();
+        if (!form.checkValidity()) { form.reportValidity(); return; }
+        var service = serviceSelect.value || 'unspecified';
+        window.dataLayer.push({event:'generate_lead', form_name:'hvac_quote_form', form_type:'quote_request', service_type:service, lead_demo:true});
+        success.style.display = 'block';
+        success.scrollIntoView({behavior:'smooth',block:'nearest'});
+        form.querySelector('button[type="submit"]').textContent = 'Demo request submitted ✓';
+      });
+    })();
+  </script>
+</body>
+</html>
